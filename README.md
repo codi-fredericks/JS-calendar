@@ -119,6 +119,7 @@ This will force the calendar to update and display any newly added events.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css">
 </head>
 <body>
