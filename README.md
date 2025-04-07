@@ -5,18 +5,18 @@ a full calendar system in vanilla js
 ## CDN Links  
 JS link
 ```
-https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js
+https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.js
 ```
 ```html
-<script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.js"></script>
 ```
 
 default CSS theme
 ```
-https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css
+https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.css
 ```
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.css">
 ```
 
 ## Create Calendar
@@ -120,11 +120,11 @@ This will force the calendar to update and display any newly added events.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.css">
 </head>
 <body>
     <div id="calendar"></div>
-    <script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.1/calendar-min.js"></script>
     <script>
         const calendar = new Calendar();
 
