@@ -1,22 +1,32 @@
 # JS-calendar
 a full calendar system in vanilla js
 
+---
+
+## 1.2 Change log
+
+
+🟩 Added Height setting for events
+
+🟩 Added Mobile height for events
+
+---
 
 ## CDN Links  
 JS link
 ```
-https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js
+https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.js
 ```
 ```html
-<script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.js"></script>
 ```
 
 default CSS theme
 ```
-https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css
+https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.css
 ```
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.css">
 ```
 
 ## Create Calendar
@@ -35,6 +45,8 @@ you can pass a dictionary of values as a paramiter to define aspects of the cale
 | `show_offset`        | Show user’s UTC offset? | `false` |
 | `24_hour_time`       | Use 24-hour time format? | `false` |
 | `prefix with time` | prefix events with the time? | `true` |
+| `event height` | height in `px` an event should be | `21` |
+| `mobile event height"` | height in `px` an event should be on mobile | `48` |
 
 > [!WARNING]  
 > the calendar uses the `crypto.subtle` API and this feature is available only in [secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) (HTTPS), in some or all [supporting browsers](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle#browser_compatibility).
@@ -81,6 +93,10 @@ Additional event details for display purposes:
 | `description`  | Event description. |
 | `fields`       | Array of custom fields. |
 
+> [!TIP]
+> You can optionally set a function to be called that returns this data
+> useful if you want to defer details to another endpoint on your site until a user clicks on the event
+
 #### 2.1 **Field Format**  
 Each field contains:  
 
@@ -120,11 +136,11 @@ This will force the calendar to update and display any newly added events.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.css">
 </head>
 <body>
     <div id="calendar"></div>
-    <script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.0/calendar-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/codi-fredericks/JS-calendar@1.2/calendar-min.js"></script>
     <script>
         const calendar = new Calendar();
 
